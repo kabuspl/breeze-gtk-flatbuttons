@@ -8,7 +8,8 @@ url='https://kde.org/plasma-desktop/'
 license=(LGPL)
 depends=()
 makedepends=(extra-cmake-modules sassc python-cairo breeze)
-groups=(plasma)
+conflicts=('breeze-gtk')
+provides=('breeze-gtk')
 source=(git+https://github.com/kabuspl/breeze-gtk-flatbuttons.git#branch=Plasma/5.27)
 sha256sums=('SKIP')
 validpgpkeys=('E0A3EB202F8E57528E13E72FD7574483BB57B18D'  # Jonathan Esk-Riddell <jr@jriddell.org>
